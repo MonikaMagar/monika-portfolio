@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Sparkles, ArrowRight, Download } from 'lucide-react';
 import { Link } from 'react-scroll';
 import profileImg from '../assets/profile.png';
+import resumePdf from '../assets/Monika_Magar_Resume editor.pdf';
 
 const Hero = () => {
   return (
@@ -63,8 +64,10 @@ const Hero = () => {
               View Portfolio <ArrowRight size={18} />
             </Link>
             <a
-              href="/resume.pdf"
+              href={resumePdf}
+              download="Monika_Magar_Resume.pdf"
               target="_blank"
+              rel="noreferrer"
               className="px-8 py-4 rounded-full border border-gray-200 bg-white hover:bg-gray-50 text-gray-900 font-medium hover:-translate-y-1 transition-all flex items-center gap-2 cursor-pointer shadow-sm hover:shadow-md"
             >
               Download Resume <Download size={18} />
